@@ -12,6 +12,7 @@ import MetricsChart from './dashboard/MetricsChart';
 import LeaderboardWidget from './dashboard/LeaderboardWidget';
 import SystemHealthMonitor from './dashboard/SystemHealthMonitor';
 import NotificationsPanel from './dashboard/NotificationsPanel';
+import AnimatedGreenRobot from './AnimatedGreenRobot';
 
 interface DashboardStats {
   totalCredentials: number;
@@ -512,6 +513,8 @@ export default function OperationsDashboard({ onBack }: OperationsDashboardProps
       >
         {chatOpen ? <X className="w-6 h-6" /> : <MessageSquare className="w-6 h-6" />}
       </button>
+
+      <AnimatedGreenRobot size={150} color="#00FF00" animationSpeed={2} />
     </div>
   );
 }
